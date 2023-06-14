@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: 'Poppins';
 }
 
 nav{
@@ -28,7 +29,6 @@ Component */
 .hero-container {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins';
   color: #000000;
 }
 .hero-img{
@@ -43,4 +43,32 @@ Component */
 .hero-container > p{
   margin-top: 0px;
   font-weight: 300;
+}
+
+/* cards container
+ */
+.gray{
+  color: #918E9B;
+}
+.card-container{
+  width: 175px;
+  font-size: 12px;
+}
+.star-rating{
+  
+  display: flex;
+  align-items: center;
+}
+
+.img-1{
+  width: 100%;
+  border-radius: 9px;
+}
+
+.star{
+  height: 14px;
+}
+
+.bold{
+  font-weight: bold;
 }
