@@ -7,23 +7,14 @@ import "./App.css";
 
 export default function App() {
   console.log(carddata);
-  const Cdata = carddata.map((data) => {
-    return (
-      <Card
-        img={data.coverImg}
-        rating={data.stats.rating}
-        reviewCount={data.stats.reviewCount}
-        location={data.location}
-        title={data.title}
-        price={data.price}
-      />
-    );
+  const Carddata = carddata.map((data) => {
+    return <Card key={data.id} {...data} />;
   });
   return (
     <div>
       <NavBar />
       <Hero />
-      <section className="cards-list">{Cdata}</section>
+      <section className="cards-list">{Carddata}</section>
     </div>
   );
 }
